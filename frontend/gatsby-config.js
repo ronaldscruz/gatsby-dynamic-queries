@@ -2,6 +2,10 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV || "development"}`,
 })
 
+console.log(process.env.API_URL)
+console.log(process.env.STRAPI_USER)
+console.log(process.env.STRAPI_PASS)
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
