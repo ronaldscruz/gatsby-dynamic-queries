@@ -18,6 +18,14 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "CMS",
+        fieldName: "DynamicCMS",
+        url: process.env.API_URL + "/graphql",
+      },
+    },
+    {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: process.env.API_URL || `http://localhost:1337`,
