@@ -1,2 +1,2 @@
 # gatsby-dynamic-queries
-Testing Gatsby behavior on production environments
+Testing Gatsby with Apollo on production environments. Comparing useQuery with useStaticQuery
